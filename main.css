@@ -1,0 +1,610 @@
+/* BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------*/
+/*----- HOME STYLES -----*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/*---------------------------------*/
+/*----- HEADER AND NAV STYLES -----*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 1);
+  padding: 20px;
+  border-bottom: 2px solid #e60000;
+}
+
+.logo-image {
+  height: 80px;
+  width: auto;
+}
+
+/*------ NAV BAR --------*/
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+#menu ul li a {
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: #f0f0f0;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+#menu ul li a:hover {
+  background-color: #e60000;
+  color: #fff;
+}
+/*------ NAV BAR --------*/
+
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #262626;
+}
+
+.intro h1 {
+  color: #e60000;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+/*--------------------------*/
+/*----- FLEX CONTAINER -----*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/*----- HOME PAGE "CARDS" -----*/
+.card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card h2 {
+  color: #e60000;
+  margin-bottom: 15px;
+}
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.card a {
+  color: #e60000;
+  text-decoration: underline;
+}
+.card a:hover {
+  color: #fff;
+}
+/*----- HOME PAGE "CARDS" -----*/
+
+.contact-strip {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-strip a {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.contact-strip a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------*/
+/*----- FOOTER STYLES -----*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+
+/*---------------------------*/
+/*----- ABOUT ME STYLES -----*/
+
+.about-me-container {
+  background-color: #262626;
+  padding: 60px 20px;
+  color: #f0f0f0;
+}
+
+.about-me-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-me-header h1 {
+  font-size: 2.8em;
+  color: #e60000;
+}
+
+.about-me-header p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/*----- ABOUT ME "CARDS" -----*/
+.about-me-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+}
+
+.about-me-card h2 {
+  font-size: 2em;
+  color: #e60000;
+  margin-bottom: 20px;
+}
+
+.about-me-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-me-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-me-card ul li {
+  font-size: 1.1em;
+}
+/*----- ABOUT ME "CARDS" -----*/
+
+/*--------------------------*/
+/*----- ABOUT ME IMAGE -----*/
+.about-me-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+/*----- ABOUT ME FOOTER -----*/
+
+.about-me-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1c1c1c;
+}
+
+.about-me-footer p {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/*----- ABOUT ME "CARDS" -----*/
+
+/*-------------------------*/
+/*----- SKILLS STYLES -----*/
+.skills-container {
+  padding: 60px 20px;
+  background-color: #262626;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-header h1 {
+  color: #e60000;
+  font-size: 2.5em;
+}
+
+.skills-header p {
+  font-size: 1.2em;
+  color: #f0f0f0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+/*----- SKILLS "CARDS" -----*/
+.skill-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.skill-card h2 {
+  color: #e60000;
+  margin-bottom: 15px;
+}
+
+.skill-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skill-card ul li {
+  font-size: 1.1em;
+  color: #f0f0f0;
+}
+
+.skill-card ul li::before {
+  color: #e60000;
+}
+/*----- SKILLS "CARDS" -----*/
+
+.skills-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+
+/*-----------------------*/
+/*----- BLOG STYLES -----*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  height: 60px;
+}
+
+/*------ NAV BAR BLOG --------*/
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  color: #ff4d4d;
+}
+/*------ NAV BAR BLOG --------*/
+
+/*----------------------------*/
+/*----- BLOG PAGE LAYOUT -----*/
+.blog-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.blog-container h1 {
+  text-align: center;
+  color: #ff4d4d;
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  background-color: #1e1e1e;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.15);
+}
+
+.blog-post h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.blog-post .date {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  line-height: 1.6;
+}
+
+
+
+/*--------------------------*/
+/*----- CONTACT STYLES -----*/
+.contact-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #ff4d4d;
+  padding-top: 30px;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 1.1em;
+  color: #f0f0f0;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff4d4d;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e60000;
+}
+
+
+/*---------------------------*/
+/*----- RESPONSE STYLES -----*/
+.response-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+.response-container h1 {
+  text-align: center;
+  color: #ff4d4d;
+  padding-top: 30px;
+}
+
+.response-container p {
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.response-container a {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.response-container a:hover {
+  background-color: #e60000;
+}
+
+
+/*---------------------------*/
+/*----- PROJECTS STYLES -----*/
+.projects-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+}
+
+.projects-container h1 {
+  text-align: center;
+  color: #ff4d4d;
+  padding-top: 30px;
+}
+
+.projects-container p {
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.2);
+  transition: transform 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-item h2 {
+  color: #ff4d4d;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #e60000;
+}
+
+
+/*-----------------------------------*/
+/*---------- MEDIA QUERIES ----------*/
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .blog-container {
+    padding: 0 10px;
+  }
+
+  .blog-post {
+    padding: 20px;
+  }
+  
+  .contact-container {
+    margin: 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .response-container {
+    margin: 20px;
+  }
+  
+  .projects-container {
+    margin: 20px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+/*---------- MEDIA QUERIES ----------*/
+/*-----------------------------------*/
+
+
+/*------------------*/
+/*---- SLICKNAV ----*/
+.slicknav_menu {
+  background-color: #111;
+}
+
+.slicknav_nav a {
+  color: #f0f0f0;
+}
+/*---- SLICKNAV ----*/
+/*------------------*/
