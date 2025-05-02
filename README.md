@@ -1,7 +1,7 @@
 # Joshua Higgerson | Personal Portfolio Website
 - Course: ITEC 236 – Web Development
 - Institution: Southern Illinois University
-- Date Developed: April 06, 2025
+- Date Developed: April 12, 2025
 - Last Tested: May 02, 2025
 
 Welcome to my Personal Portfolio Website, 
