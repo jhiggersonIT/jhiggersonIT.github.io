@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----Comment Section-----
+* Author: Joshua Higgerson
+* Title: "Personal Portfolio | Blog"
+* SIU | ITEC 236
+* Developed on: 4/12/2025
+* Tested on: 4/18/2025
+
+<!---------------------------------------------------
+---- v Head Section v | Title, Description & Tags -->
+    <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read blog posts and updates from Joshua Higgerson about IT, cybersecurity, and tech trends.">
+    <meta name="keywords" content="Joshua Higgerson, IT Blog, Cybersecurity, Tech News, IT Student">
+    
+    <!-- Title --------------->
+    <title>Blog | Joshua Higgerson</title>
+
+    <!-- Favicon ------------->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Stylesheets --------> 
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="styles/slicknav.css">
+ 
+<!---------------------------------------------------------------------------------------->                        
+<!-------------------------------| v JS SlickNav Script v |------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function toggleSlickNav() {
+                    if ($(window).width() < 768) {
+                        $('#menu').slicknav({ prependTo: "body" });
+                                                } 
+                    else {
+                $('#menu').slicknav('destroy');
+                        }
+                                        }
+
+            toggleSlickNav();
+
+            $(window).resize(function() {
+                toggleSlickNav();
+        });
+    });
+      </script>
+    </head>
+<!----------------------------| ^ End of JS SlickNav Script ^ |---------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------->
+<!----| v NAV BAR v |---->
+<body>
+    <header>
+        <div class="header-container">
+        <img src="images/logo.png" alt="Joshua Higgerson Logo" class="logo-image">
+        <nav id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_me.html">About Me</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="blog.html" class="active">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+<!----| ^ NAV BAR ^ |---->
+<!----------------------->
+
+    <section class="blog-container">
+      <div class="blog-header">
+        <h1>Blog & Updates</h1>
+        <p>Thoughts, tips, and experiences from my journey in tech.</p>
+      </div>
+
+  <article class="blog-post">
+    <h2>How I Got Started in IT</h2>
+      <div class="date">April 18, 2025</div>
+        <p>
+          My passion for IT began when I built my first PC. From there, I started exploring Linux, networking, and security. This post shares what inspired me to pursue the field professionally.
+        </p>
+        <img src="images/first_pc_build.jpg" alt="windows server" class="blog-image">
+  </article>
+
+  <article class="blog-post">
+    <h2>What I Learned from Setting Up a Windows Server Lab</h2>
+      <div class="date">April 14, 2025</div>
+        <p>
+          I recently created a lab environment with Windows Server and Active Directory. It helped me understand how enterprise systems are managed. Here's what I learned and how it improved my skills.
+        </p>
+        <img src="images/windowsserver.png" alt="windows server" class="blog-image">
+  </article>
+
+  <article class="blog-post">
+    <h2>My Favorite Cybersecurity Tools</h2>
+      <div class="date">April 12, 2025</div>
+        <p>
+          From Wireshark to Nmap and beyond—these are the tools I've found most useful as an aspiring cybersecurity professional. I share tips and real-world examples in this post.
+        </p>
+            <video width="480" height="320" controls>
+                <source src="/videos/wireshark.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video> 
+  </article>
+    </section>
+
+<!---------------------->
+<!----| v Footer v |---->
+    <footer>
+        <pre style="text-align: right;">  Last Updated: 4/12/2025
+                                        Tested On: 4/12/2025</pre>
+        <p style="text-align: center;">   Copyright© 2025 | ITEC 236 | Joshua Higgerson.</p>
+    </footer>
+<!----| ^ End of Footer ^ |---->
+<!----------------------------->
+    </body>
+</html>

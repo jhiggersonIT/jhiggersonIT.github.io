@@ -1,0 +1,92 @@
+@media print {
+  /* Print styles go here */
+
+* {
+  background: none !important;
+  color: #000 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  nav,
+  footer,
+  audio {
+    display: none;
+  }
+
+  .card {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+  }
+
+  a:link,
+  a:visited {
+    color: black;
+    text-decoration: underline;
+  }
+
+  /* You can adjust font sizes, remove colors, etc. */
+
+
+/* General page layout */
+body {
+  font-family: serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  margin: 1in;
+}
+
+/* Hide non-print elements */
+header,
+nav,
+audio,
+footer,
+.slicknav_menu,
+.contact-strip {
+  display: none !important;
+}
+
+/* Simplify sections */
+.intro, .flex-container, .card {
+  background: none !important;
+  color: #000;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #000 !important;
+  page-break-after: avoid;
+}
+
+/* Links: show URL next to link */
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 90%;
+  color: #555;
+}
+
+/* Lists and paragraphs */
+ul, p {
+  margin-bottom: 10px;
+}
+
+/* Prevent awkward breaks */
+.card, .intro, .contact-strip {
+  page-break-inside: avoid;
+}
+
+/* Optional: Better layout for printing */
+.flex-container {
+  display: block;
+}
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>                                                                                             
+<html lang="en">
+
+<!----Comment Section-----
+* Author: Joshua Higgerson
+* Title: "Personal Portfolio | Response"
+* SIU | ITEC 236
+* Developed on: 4/12/2025
+* Tested on: 4/12/2025
+ 
+<!---------------------------------------------------
+---- v Head Section v | Title, Description & Tags -->
+    <head>  
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Response Page for Joshua's Pro Cycles Contact Form">
+    <meta name="keywords" content="contact form, response page, Joshua's Pro Cycles">
+    
+    <!-- Title --------------->
+    <title>Response | Joshua Higgerson</title>
+    
+    <!-- Favicon ------------->
+    <link rel="icon" type="image/x-icon" href="images/bike_pic2 pngtree.png">
+    
+    <!-- Stylesheets -------->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="styles/slicknav.css">
+ 
+<!---------------------------------------------------------------------------------------->                        
+<!-------------------------------| v JS SlickNav Script v |------------------------------->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function toggleSlickNav() {
+                    if ($(window).width() < 768) {
+                        $('#menu').slicknav({ prependTo: "body" });
+                                                } 
+                    else {
+                $('#menu').slicknav('destroy');
+                        }
+                                        }
+
+            toggleSlickNav();
+
+            $(window).resize(function() {
+                toggleSlickNav();
+        });
+    });
+      </script>
+    </head>
+<!----------------------------| ^ End of JS SlickNav Script ^ |---------------------------->
+<!-----------------------------------------------------------------------------------------> 
+<!----------------------->
+<!----| v NAV BAR v |---->
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Joshua Higgerson Logo" class="logo-image">
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!----| ^ NAV BAR ^ |---->
+<!----------------------->
+
+  <section class="response-container">
+    <h1>Thank You for Reaching Out!</h1>
+    <p>Your message has been successfully received. I'll review it and get back to you as soon as possible.</p>
+    <p>If you need an immediate response, please feel free to reach me via email at <a href="mailto:j.higgerson98@gmail.com">j.higgerson98@gmail.com</a>.</p>
+    <p>Thank you for your time!</p>
+
+    <a href="index.html" class="back-home">Back to Home</a>
+  </section>
+  
+<!---------------------->
+<!----| v Footer v |---->
+    <footer>
+        <pre style="text-align: right;">  Last Updated: 4/12/2025
+                                        Tested On: 4/12/2025</pre>
+        <p style="text-align: center;">   Copyright© 2025 | ITEC 236 | Joshua Higgerson.</p>
+    </footer>
+<!----| ^ End of Footer ^ |---->
+<!----------------------------->
+    </body>
+</html>

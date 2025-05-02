@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----Comment Section-----
+* Author: Joshua Higgerson
+* Title: "Personal Portfolio | About Me"
+* SIU | ITEC 236
+* Developed on: 4/12/2025
+* Tested on: 4/12/2025
+
+<!---------------------------------------------------
+---- v Head Section v | Title, Description & Tags -->
+    <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Joshua Higgerson's personal portfolio website, showcasing IT skills, projects, and professional experience.">
+    <meta name="keywords" content="Joshua Higgerson, IT Portfolio, Networking, Cybersecurity, Web Development, HTML, CSS, JavaScript">
+
+    <!-- Title --------------->
+    <title>About Me | Joshua Higgerson</title>
+
+    <!-- Favicon ------------->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Stylesheets --------> 
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+<!---------------------------------------------------------------------------------------->                        
+<!-------------------------------| v JS / SlickNav v |------------------------------->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="http://use.edgefonts.net/pressio.js"></script>     
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function toggleSlickNav() {
+                    if ($(window).width() < 768) {
+                        $('#menu').slicknav({ prependTo: "body" });
+                                                } 
+                    else {
+                $('#menu').slicknav('destroy');
+                        }
+                                        }
+
+            toggleSlickNav();
+
+            $(window).resize(function() {
+                toggleSlickNav();
+        });
+    });
+      </script>
+    </head>
+<!----------------------------| ^ End of JS SlickNav Script ^ |---------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------->
+<!----| v NAV BAR v |---->
+<body>
+  <header>
+    <div class="header-container">
+      <img class="logo-image" src="images/logo.png" alt="Joshua Higgerson Logo" title="Joshua Higgerson Portfolio Logo">
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_me.html" class="active">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!----| ^ NAV BAR ^ |---->
+<!----------------------->
+  
+<!-------------------------------->
+<!----| v ABOUT ME SECTION v |---->
+
+  <main class="about-me-container">
+    <section class="about-me-header">
+      <h1>About Me</h1>
+      <p>I'm <strong>Joshua Higgerson</strong>, an IT enthusiast with a passion for cybersecurity, networking, and system administration. My journey in technology began with a curiosity about how things work and evolved into a dedication to problem-solving, continuous learning, and innovation in the field of information technology.</p>
+    </section>
+
+<!----| v About Me Content v |---->
+    <section class="about-me-content">
+      <div class="about-me-card">
+          <div class="about-me-image-container">
+              <img class="about-me-image" src="images/pic3.JPG" alt="Joshua Higgerson Profile Photo">
+              <img class="about-me-image2" src="images/pic.png" alt="Joshua Higgerson 2nd Profile Photo">
+          </div>
+      </div>
+      <div class="about-me-card">
+        <h2>Background & Education</h2>
+        <p>I’m currently pursuing a degree in Information Technology at Southern Illinois University. My education has equipped me with a strong foundation in hardware, software, and IT operations, and I've taken particular interest in areas like Linux administration, cybersecurity principles, and network architecture.</p>
+
+        <h2>Certifications & Experience</h2>
+        <ul>
+          <li>CompTIA Network+ (in progress)</li>
+          <li>CompTIA Security+ (planned)</li>
+          <li>Hands-on labs in Windows Server and PowerShell scripting</li>
+          <li>Completed several personal and academic web development projects</li>
+        </ul>
+
+        <h2>Goals & Interests</h2>
+        <p>I'm passionate about cybersecurity and aspire to work in threat detection and network security. Outside of tech, I enjoy video games, building PCs, and exploring new programming languages. My goal is to combine creativity with technical skill to build tools that make systems more secure and efficient.</p>
+      </div>
+    </section>
+  </main>
+<!----| ^ ABOUT ME SECTION ^ |---->
+<!-------------------------------->
+
+<!---------------------->
+<!----| v Footer v |---->
+    <footer>
+        <pre style="text-align: right;">  Last Updated: 4/12/2025
+                                        Tested On: 4/12/2025</pre>
+        <p style="text-align: center;">   Copyright© 2025 | ITEC 236 | Joshua Higgerson.</p>
+    </footer>
+<!----| ^ End of Footer ^ |---->
+<!----------------------------->
+    </body>
+</html>

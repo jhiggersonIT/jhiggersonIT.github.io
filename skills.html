@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----Comment Section-----
+* Author: Joshua Higgerson
+* Title: "Personal Portfolio | Skills"
+* SIU | ITEC 236
+* Developed on: 4/12/2025
+* Tested on: 4/12/2025
+
+<!---------------------------------------------------
+---- v Head Section v | Title, Description & Tags -->
+    <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about the technical skills of Joshua Higgerson in the IT field including networking, cybersecurity, system administration, and programming.">
+    <meta name="keywords" content="Joshua Higgerson, IT Skills, Networking, Cybersecurity, System Administration, Programming, Tech Career">
+  
+    <!-- Title --------------->
+    <title>Skills | Joshua Higgerson</title>
+  
+    <!-- Favicon ------------->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Stylesheets --------> 
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+  
+<!---------------------------------------------------------------------------------------->                        
+<!-------------------------------| v JS SlickNav Script v |------------------------------->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                function toggleSlickNav() {
+                    if ($(window).width() < 768) {
+                        $('#menu').slicknav({ prependTo: "body" });
+                                                } 
+                    else {
+                $('#menu').slicknav('destroy');
+                        }
+                                        }
+
+            toggleSlickNav();
+
+            $(window).resize(function() {
+                toggleSlickNav();
+        });
+    });
+      </script>
+    </head>
+<!----------------------------| ^ End of JS SlickNav Script ^ |---------------------------->
+<!----------------------------------------------------------------------------------------->
+<!----------------------->
+<!----| v NAV BAR v |---->
+<body>
+  <header>
+    <div class="header-container">
+      <img class="logo-image" src="images/logo.png" alt="Joshua Higgerson Logo" title="Joshua Higgerson Portfolio Logo">
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!----| ^ NAV BAR ^ |---->
+<!----------------------->
+
+  <main class="skills-container">
+    <section class="skills-header">
+      <h1>Skills</h1>
+      <p>Below are the key technical skills I've developed throughout my studies and personal projects in the IT field.</p>
+    </section>
+
+    <section class="skills-content">
+      <div class="skill-card">
+        <h2>Networking</h2>
+        <ul>
+          <li>TCP/IP protocols</li>
+          <li>Routing & Switching</li>
+          <li>Network troubleshooting and analysis</li>
+          <li>CompTIA Network+ knowledge (in progress)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Cybersecurity</h2>
+        <ul>
+          <li>Network Security</li>
+          <li>Threat detection and analysis</li>
+          <li>Firewalls & VPNs</li>
+          <li>CompTIA Security+ (planned)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>System Administration</h2>
+        <ul>
+          <li>Windows Server Management</li>
+          <li>Linux Server Administration</li>
+          <li>PowerShell scripting</li>
+          <li>Automation with Bash & Python</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h2>Programming & Web Development</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python (Scripting, Automation)</li>
+          <li>Node.js, Express.js</li>
+          <li>Web Development (Front-end & Back-end)</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="skills-table">
+      <h2>Skills Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Networking</td>
+                    <td>Intermediate</td>
+                    <td>1.5 years</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity</td>
+                    <td>Intermediate</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>System Administration</td>
+                    <td>Beginner</td>
+                    <td>5 months</td>
+                </tr>
+                <tr>
+                    <td>Programming & Web Development</td>
+                    <td>Advanced</td>
+                    <td>12+ years</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+  </main>
+
+<!---------------------->
+<!----| v Footer v |---->
+    <footer>
+        <pre style="text-align: right;">  Last Updated: 4/12/2025
+                                        Tested On: 4/12/2025</pre>
+        <p style="text-align: center;">   Copyright© 2025 | ITEC 236 | Joshua Higgerson.</p>
+    </footer>
+<!----| ^ End of Footer ^ |---->
+<!----------------------------->
+    </body>
+</html>
