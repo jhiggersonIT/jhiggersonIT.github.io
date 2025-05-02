@@ -203,14 +203,29 @@ footer {
 .about-me-card ul li {
   font-size: 1.1em;
 }
+
+.image-card {
+  flex: none;
+  width: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+
 /*----- ABOUT ME "CARDS" -----*/
 
 /*--------------------------*/
 /*----- ABOUT ME IMAGE -----*/
 .about-me-image-container {
+  display: inline-block;
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   overflow: hidden;
   margin-bottom: 30px;
@@ -236,6 +251,11 @@ footer {
 
 .about-me-image,
 .about-me-image2 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
   object-fit: cover;
 }
 
