@@ -462,6 +462,14 @@ nav a.active {
   margin-bottom: 15px;
 }
 
+.blog-video {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
 /*--------------------------*/
 /*----- CONTACT STYLES -----*/
 .contact-container {
